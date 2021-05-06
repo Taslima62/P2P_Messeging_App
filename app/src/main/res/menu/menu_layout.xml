@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/fileMenu"
+        android:title="Send File"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/saveMenu"
+        android:title="Save Messages"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/backgroundMenu"
+        android:title="Background"
+        app:showAsAction="never"/>
+</menu>

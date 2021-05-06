@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE6E0E1"
+    android:orientation="vertical"
+    tools:context=".FirstPage">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="10dp"
+        android:text="P2P Messenger App"
+        android:textColor="#B65CB4"
+        android:textSize="28sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:text="To know your IP address"
+
+             />
+    <Button
+        android:id="@+id/clickButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click"
+        android:onClick="onClickedButton"
+        android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ipAddressId"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:text="IP address : ..............."
+        android:textSize="14sp"
+
+
+        />
+
+    <Button
+        android:id="@+id/startButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onStartClicked"
+        android:text="start" />
+
+
+</LinearLayout>

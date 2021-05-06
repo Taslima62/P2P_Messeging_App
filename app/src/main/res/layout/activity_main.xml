@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9094518F"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/linearLayoutId"
+    android:weightSum="12">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPort"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        >
+
+        <TextView
+
+            android:id="@+id/serverPortTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Your Port:"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            />
+
+
+        <EditText
+            android:id="@+id/serverPortEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Enter your port number.."
+            android:inputType="number"
+            android:text="8888"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/hostButton"
+        android:layout_width="98dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="130dp"
+        android:layout_weight="1"
+        android:background="#997BCED1"
+        android:onClick="onStartClicked"
+        android:text="Start Server"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTargetIP"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/targetIPTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Target IP :"
+            android:textStyle="bold"
+            android:paddingTop="8dp"/>
+        <EditText
+            android:id="@+id/targetIPEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Enter the target ip address.."
+            android:inputType="text"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTargetPort"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/targetPortText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Target Port :"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+
+            />
+
+        <EditText
+            android:id="@+id/targetPortEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="8888"
+            android:hint="Target Port"
+            />
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:onClick="onConnectClicked"
+        android:text="Connect"
+        android:textStyle="bold"
+        android:layout_marginLeft="130dp"
+        android:background="#997BCED1"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="5dp"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:layout_marginTop="1dp"
+        android:weightSum="2"
+        android:visibility="gone">
+        <TextView
+
+            android:id="@+id/chatText1Id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Received Message"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+
+            />
+        <TextView
+
+            android:id="@+id/chatText2Id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Send Message"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+
+
+            />
+    </LinearLayout>
+
+
+
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1.5"
+        android:ems="10"
+        android:hint="Type Message..."
+        android:inputType="text"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:onClick="onSendClicked"
+        android:text="Send"
+        android:background="#7BCED1"
+        android:textStyle="bold"
+        android:layout_marginLeft="130dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
